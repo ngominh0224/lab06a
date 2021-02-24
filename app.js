@@ -1,4 +1,3 @@
-require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
 const app = express();
@@ -8,7 +7,7 @@ app.use(cors());
 
 app.get('/', (req, res) => {
   res.json({
-    Documentation: 'Docs will go here!',
+    Documentation: 'Type in /data to see the list!',
   });
 });
 
