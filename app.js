@@ -18,7 +18,7 @@ app.get('/data', (req, res) => {
 
 app.get('/data/:id', (req, res) => {
   const id = Number(req.params.id);
-  const chocolateItem = chocolate.find((choco) => choco.id === id);
+  const chocolateItem = chocolates.find((choco) => choco.id === id);
   res.json({
     results: chocolateItem,
   });
